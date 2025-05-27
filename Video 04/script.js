@@ -1,1 +1,0 @@
-alert("YOU ARE VISITING WEBSITE") 
