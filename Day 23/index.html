@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid blue;
+            display: inline-block;
+            padding: 45px;
+            margin: 34px;
+            width: 344px;
+            /* to apply padding from top also we have to make that block element so we use display as 'inline-block' */
+        }
+        .box1{
+            /* display: none;
+            this property makes the element like it never exist*/
+            /* visibility: hidden;
+            this property is also same but this leaves space for that element ... shows the presence of that element*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box">
+        also a nice box
+    </div>
+    <!-- as you can see div is block element it is taking whole width... to make it inline element we use Display property -->
+
+    <span>i am a good</span>
+    <span>boy</span>
+
+</body>
+
+</html>
