@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - NotRachittt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Form for GLOBAL E-SPORTS Tournament</h1>
+    <form action="post">
+        <label for="username">Enter your name :- </label>
+        <input type="text" id="username" name="username" placeholder="Enter your name">
+
+        <div>
+            <input type="radio" name="Gender" id="Male" value="Male">
+            <label for="Male">Male</label>
+        </div>
+        <div>
+            <input type="radio" name="Gender" id="Female" value="Female">
+            <label for="Female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" id="rank" value="yes">
+            <label for="rank">Current Rank</label>
+        </div>
+        <div>
+            <label for="comment">Enter your message</label>
+            <br>
+            <textarea name="comment" id="comment" rows="4" cols="50"></textarea>
+        </div>
+        <div>
+            <label for="gun">Select your gun :-</label>
+            <select name="gun" id="gun">
+                <option value="Phantom">Phantom</option>
+                <option value="Ares">Ares</option>
+                <option value="Bulldog">Bulldog</option>
+                <option value="Vandal">Vandal</option>
+                <option value="Ghost">Ghost</option>
+            </select>
+        </div>
+    </form>
+</body>
+
+</html>
