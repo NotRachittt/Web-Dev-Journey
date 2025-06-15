@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variables | NotRachittt</title>
+    <style>
+        /* THIS IS USED IF YOU ARE USING A SPECIFIC COLOR MULTIPLE TIMES THEN FOR EASE TO APPLY WE USE THIS CSS VARIABLE */
+        :root {
+            --color: rgb(2, 130, 185);
+            --secolor: rgb(151, 204, 211);
+            --defpad: 23px;
+            --defop: 0.4;
+        }
+
+        /* anything inside root is called as global variable */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            /* background-color: rgb(18, 211, 86); */
+            background-color: var(--color);
+        }
+
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        ul li {
+            opacity: var(--defop);
+            padding: 30px;
+            padding: var(--defpad);
+        }
+        ul li:first-child{
+            --color: rgb(203, 226, 0);
+            background-color: var(--color);
+            /* /* this variable is called as local variable its can overwrite global variable */
+        }
+
+        .box {
+            /* background-color: rgb(151, 234, 128); */
+            background-color: var(--secolor);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque earum rem obcaecati sint temporibus aliquam
+        molestias quasi sed. Nobis tempora rem molestias, perspiciatis minima qui quos omnis magnam tenetur nisi a atque
+        blanditiis earum vel laudantium, dolorum vero aut illum officia voluptatem quo? Placeat, saepe.
+    </div>
+
+</body>
+
+</html>
