@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Queries</title>
+    <style>
+        body {
+            background-color: red;
+        }
+@media screen and (orientation: landscape) {
+    body{
+        border: 5px solid yellow;
+    }
+    
+}
+        @media only screen and (max-width: 455px) {
+            body {
+                background-color: yellowgreen;
+                color: blue;
+            }
+
+            .boxes {
+                flex-direction: column;
+            }
+        }
+
+        /* @media not|only mediatype and (expressions) {CSS-Code;} */
+
+        .boxes {
+            display: flex;
+        }
+
+        .box {
+            width: 344px;
+            height: 344px;
+            background-color: rgb(0, 183, 255);
+            padding: 3px;
+            margin: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        Hello i am red guy
+    </div>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
