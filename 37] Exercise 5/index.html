@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 5</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --nav-color: #7c73e6;
+            --main-color: #e9d2ff;
+            --sec-color: #c4c1e0;
+            --ter-color: #ffe9e3;
+            --white: white;
+            --footer: #f681ff;
+        }
+
+        body {
+            background-color: var(--main-color)
+        }
+
+        header{
+            top: 0;
+            position: sticky;
+        }
+
+        .nav {
+            background-color: var(--nav-color);
+        }
+
+        .nav ul {
+            position: sticky;
+            list-style: none;
+            display: flex;
+            padding: 20px;
+            padding-left: 30px;
+            gap: 25px;
+            font-size: 20px;
+            color: var(--white);
+        }
+
+        .nav ul li {
+            font-family: "Poppins", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            cursor: pointer;
+        }
+
+        .main {
+            display: flex;
+            gap: 200px;
+            padding: 50px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .firstbox {
+            border: 2px solid black;
+            border-radius: 50px;
+            width: 500px;
+            height: 600px;
+            padding: 35px;
+            background-color: aqua;
+        }
+
+        .secondbox {
+            border: 2px solid black;
+            border-radius: 50px;
+            width: 500px;
+            padding: 35px;
+            background-color: peru;
+        }
+
+        .slot {
+            border: 5px solid black;
+            border-radius: 50px;
+            width: 1316px;
+            height: 400px;
+            margin-left: 100px;
+            margin-bottom: 70px;
+            text-align: center;
+            font-size: 70px;
+
+            font-family: "Poppins", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            cursor: pointer;
+            padding-top: 170px;
+        }
+
+        .logo{
+            margin: 10px;
+            display: flex;
+            justify-content: flex-end;
+        }
+        img{
+            width: 100px;
+            position: fixed;
+            bottom: 0;
+            border-radius: 100px;
+        }
+
+        .footer{
+            font-size: 70px;
+            font-family: "Poppins", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+            cursor: pointer;
+            text-align: center;
+            background-color: var(--footer);
+
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Shop</li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="firstbox"></div>
+        <div class="secondbox"></div>
+    </div>
+
+    <div class="slot">
+        Welcome to Sigma Web Development Express
+    </div>
+
+    <div class="logo">
+        <img src="https://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/locomotive.png" alt="">
+    </div>
+
+    <div class="footer">
+        HELLO YOU'RE VIEWING FOOTER
+    </div>
+
+</body>
+
+</html>
